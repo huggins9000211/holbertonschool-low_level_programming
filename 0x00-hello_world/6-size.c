@@ -8,7 +8,7 @@ int main()
 {
 	printf("Size of a char: %d",sizeof(char));
 	puts(" byte(s)");
-	printf("Size of a int: %d",sizeof(int));
+	printf("Size of an int: %d",sizeof(int));
 	puts(" byte(s)");
 	printf("Size of a long int: %d",sizeof(long));
 	puts(" byte(s)");
