@@ -1,5 +1,6 @@
-/* prints size of various types */
+/* prints a string without useing printf */
 #include <stdio.h>
+#include <unistd.h>
 /**
  * main - Prints a string
  *
