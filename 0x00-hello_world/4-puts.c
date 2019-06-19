@@ -1,6 +1,9 @@
+/* prints a string */
 #include <stdio.h>
 /**
  * main - Prints a string
+ *
+ *Return: 0
  */
 int main(void)
 {
