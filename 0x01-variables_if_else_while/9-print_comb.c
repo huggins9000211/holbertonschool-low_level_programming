@@ -8,12 +8,18 @@
  */
 int main(void)
 {
-	char abc[28] = "0, 1, 2, 3, 4, 5, 6, 7, 8, 9";
 	int i;
 
-	for (i = 0; i < 28; i++)
+	for (i = '0'; i <= '9'; i++)
 	{
-		putchar(abc[i]);
+		if (i == '9') {
+			putchar(i);
+		}
+		else{
+			putchar(i);
+			putchar(',');
+			putchar(' ');
+		}
 	}
 
 	putchar('\n');
