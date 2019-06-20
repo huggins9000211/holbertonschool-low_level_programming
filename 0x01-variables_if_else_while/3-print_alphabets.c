@@ -18,7 +18,7 @@ int main(void)
 	}
 
 	i=0;
-
+a
 	for (i = 0; i < 26; i++)
 	{
 		putchar(caps[i]);
