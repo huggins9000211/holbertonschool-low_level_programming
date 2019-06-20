@@ -17,8 +17,6 @@ int main(void)
 		putchar(abc[i]);
 	}
 
-	i=0;
-a
 	for (i = 0; i < 26; i++)
 	{
 		putchar(caps[i]);
