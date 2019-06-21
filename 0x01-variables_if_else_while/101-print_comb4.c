@@ -16,7 +16,7 @@ int main(void)
 	{
 		for (c = i + 1; c <= '9'; c++)
 		{
-			for (a = c + 1; a < '9'; a++)
+			for (a = c + 1; a <= '9'; a++)
 			{
 				if (a != '2')
 				{
