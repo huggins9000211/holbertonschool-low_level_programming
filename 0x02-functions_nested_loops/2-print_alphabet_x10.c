@@ -1,9 +1,9 @@
 /* prints the alphabe */
 #include "holberton.h"
 /**
- * main - Prints a string
+ * print_alphabet_x10 - Prints a string
  *
- *Return: 0
+ *Return: void
  */
 void print_alphabet_x10(void)
 {
@@ -20,5 +20,5 @@ void print_alphabet_x10(void)
 		_putchar('\n');
 	}
 
-	return;
+	return ;
 }
