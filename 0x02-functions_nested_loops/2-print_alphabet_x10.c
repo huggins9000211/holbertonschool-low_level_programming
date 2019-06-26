@@ -1,5 +1,5 @@
 /* prints the alphabe */
-#include <stdio.h>
+#include "holberton.h"
 /**
  * main - Prints a string
  *
@@ -15,20 +15,10 @@ void print_alphabet_x10()
 	{
 		for (i = 0; i < 26; i++)
 		{
-			putchar(abc[i]);
+			_putchar(abc[i]);
 		}
-		putchar('\n');
+		_putchar('\n');
 	}
 
 	return;
-}
-/**
- * main - Prints a string
- *
- *Return: 0
- */
-int main(void)
-{
-	print_alphabet();
-	return (0);
 }
