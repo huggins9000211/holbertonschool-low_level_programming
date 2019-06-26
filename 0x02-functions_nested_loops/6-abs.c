@@ -1,9 +1,9 @@
 /* prints the alphabe */
 #include "holberton.h"
 /**
- * main - Prints a string
+ * _abs - Prints a string
  *
- *Return: 0
+ *Return: int
  */
 int _abs(int n)
 {
