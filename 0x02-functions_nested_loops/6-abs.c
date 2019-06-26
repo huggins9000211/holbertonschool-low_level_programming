@@ -3,7 +3,7 @@
 /**
  * _abs - Prints a string
  *
- *Return: int
+ * Return: int
  */
 int _abs(int n)
 {
