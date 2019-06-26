@@ -1,13 +1,13 @@
 /* prints the alphabe */
 #include <stdio.h>
 /**
- * _islower - Prints a string
+ * _isalpha - Prints a string
  *
  *Return: int
  */
-int _islower(int c);
+int _isalpha(int c);
 {
-	if (c >= 97 && c <= 122)
+	if (c >= 97 && c <= 122 || c >= 65 && c <= 90)
 	{
 		return (1);
 	}
