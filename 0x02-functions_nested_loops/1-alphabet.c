@@ -1,9 +1,9 @@
 /* prints the alphabe */
 #include <stdio.h>
 /**
- * main - Prints a string
+ * print_alphabet - Prints a string
  *
- *Return: 0
+ *Return: void
  */
 void print_alphabet(void)
 {
