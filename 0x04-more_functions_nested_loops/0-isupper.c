@@ -6,7 +6,7 @@
  *
  * Return: void
  */
-int _isupper(int c);
+int _isupper(int c)
 {
 	if (c >= 55 && c <= 90)
 	{
@@ -16,5 +16,5 @@ int _isupper(int c);
 	{
 		return (0);
 	}
-	return;
+	return ;
 }
