@@ -1,6 +1,5 @@
 /* prints the alphabe */
-#include <stdio.h>
-#include <stdlib.h>
+#include "holberton.h"
 /**
  * print_number - Prints a string
  * @n: int
@@ -9,12 +8,11 @@
  */
 void print_number(int n)
 {
-	int i;
 	int negated;
 
 	if (n < 0)
 	{
-		negated = n * -1
+		negated = n * -1;
 		if (negated > 999)
 		{
 			_putchar('-');
@@ -45,20 +43,20 @@ void print_number(int n)
 	}
 	else if (n > 0)
 	{
-		if (negated > 999)
+		if (n > 999)
 		{
 			_putchar(n / 1000 + '0');
 			_putchar(n / 100 + '0');
 			_putchar(n / 10 + '0');
 			_putchar(n % 10 + '0');
 		}
-		else if (negated > 99)
+		else if (n > 99)
 		{
 			_putchar(n / 100 + '0');
 			_putchar(n / 10 + '0');
 			_putchar(n % 10 + '0');
 		}
-		else if (negated > 9)
+		else if (n > 9)
 		{
 			_putchar(n / 10 + '0');
 			_putchar(n % 10 + '0');
