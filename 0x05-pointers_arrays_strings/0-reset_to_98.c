@@ -1,10 +1,10 @@
 /* printsa the alphabe */
 #include "holberton.h"
 /**
- * _isdigit - Prints a string
- * @c: int
+ * reset_to_98 - Prints a string
+ * @n: pointer
  *
- * Return: int
+ * Return: void
  */
 void reset_to_98(int *n)
 {
