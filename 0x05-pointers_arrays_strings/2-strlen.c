@@ -1,15 +1,24 @@
-#include<stdio.h>
-
-int main(char *s)
+/**
+ * _strlen - Prints a string
+ * @s: char
+ * @i: char
+ * @count: int
+ *
+ * Return: int
+ */
+int _strlen(char *s)
 {
-	int a[] = {1, 2, 3, 8, 3, 5, 9, 0, 12, 56};
-	//char b[] = *s;  // use this
-	    int i, *p;
+	/*char i;*/
+	int count;
+	/*for(i=s; i != '\0'; i++)
+	    	count ++;
+	*/
+	count = 0;
+	while (s[0] != '\0')
+	{
+		s ++;
+		count ++;
+	}
+	return count;
 
-
-
-	    for(i=0; i<(&a)[1]-a; i++)   // even more efficient
-	    	printf("%d", a[i]);
-
-	    return 0;
 }
