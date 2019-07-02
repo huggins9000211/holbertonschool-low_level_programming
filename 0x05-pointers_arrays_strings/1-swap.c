@@ -1,8 +1,9 @@
 /* printsa the alphabe */
 #include "holberton.h"
 /**
- * _isdigit - Prints a string
- * @c: int
+ * swap_int - Prints a string
+ * @a: int
+ * @b: int
  *
  * Return: int
  */
