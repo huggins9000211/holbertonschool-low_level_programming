@@ -1,7 +1,7 @@
 /* printsa the alphabe */
 #include "holberton.h"
 /**
- * print_diagonal - Prints a string
+ * print_square - Prints a string
  * @size: int
  *
  * Return: void

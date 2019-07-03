@@ -6,14 +6,14 @@
  *
  * Return: 0
  */
-void print_number(int n)
+void print_numbers(int n)
 {
 	int negated;
 
 	if (n < 0)
 	{
 		negated = n * -1;
-		if (negated > 999)
+
 		{
 			_putchar('-');
 			_putchar(negated / 1000 + '0');
