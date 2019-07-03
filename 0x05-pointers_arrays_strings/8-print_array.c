@@ -47,7 +47,7 @@ void print_array(int *a, int n)
 	int len;
 
 	count = 0;
-	len = _strlen(src);
+	len = _strlen(a);
 	while (count < n)
 	{
 		if (count < len)
