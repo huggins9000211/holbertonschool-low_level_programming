@@ -40,7 +40,11 @@ void print_array(int *a, int n)
 	len = _strlen(src);
 	while (count < n)
 	{
-		_putchar(a[count]);
-		count++;
+		if (count < len)
+		{
+
+			_putchar(a[count]);
+			count++;
+		}
 	}
 }
