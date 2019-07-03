@@ -8,6 +8,8 @@
  *
  * Return: int
  */
+ int _putchar(char);
+ 
  int _strlen(char *s)
  {
  	int count;
