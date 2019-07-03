@@ -7,9 +7,10 @@
  */
 char *_strcpy(char *dest, char *src)
 {
-	len = _len(src)
-	while (count < len) 
+	len = _len(src);
+	while (count < len)
 	{
 		dest[count] = src[count]
 	}
+	return dest;
 }
