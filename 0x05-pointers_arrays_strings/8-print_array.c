@@ -8,8 +8,6 @@
  *
  * Return: int
  */
- int _putchar(char);
- 
  int _strlen(char *s)
  {
  	int count;
@@ -22,6 +20,16 @@
  	}
  	return (count);
 
+ }
+ /**
+  * _putchar - Prints a string
+  * @s: char
+  *
+  * Return: int
+  */
+ int _putchar(char c)
+ {
+ 	return (write(1, &c, 1));
  }
 
 /**
