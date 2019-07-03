@@ -1,8 +1,9 @@
+/* printsa the alphabe */
+#include "holberton.h"
 /**
  * _strlen - Prints a string
- * @s: char
- * @i: char
  * @count: int
+ * @s: char
  *
  * Return: int
  */
@@ -17,5 +18,4 @@ int _strlen(char *s)
 		count++;
 	}
 	return (count);
-
 }
