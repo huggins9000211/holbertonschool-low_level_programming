@@ -2,7 +2,6 @@
 #include "holberton.h"
 /**
  * _strlen - Prints a string
- * @count: int
  * @s: char
  *
  * Return: int
