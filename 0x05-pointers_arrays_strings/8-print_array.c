@@ -1,42 +1,10 @@
 #include "holberton.h"
-
-/**
- * _strlen - Prints a string
- * @s: char
- * @i: char
- * @count: int
- *
- * Return: int
- */
- int _strlen(char *s)
- {
- 	int count;
-
- 	count = 0;
- 	while (s[0] != '\0')
- 	{
- 		s++;
- 		count++;
- 	}
- 	return (count);
-
- }
- /**
-  * _putchar - Prints a string
-  * @s: char
-  *
-  * Return: int
-  */
- int _putchar(char c)
- {
- 	return (write(1, &c, 1));
- }
+#include <unistd.h>
 
 /**
  * _strcpy - check the code for Holberton School students.
- * @dest: char
- * @src: char
- * @len: int
+ * @a: int
+ * @n: int
  * @count: int
  *
  * Return: Always 0.
@@ -44,17 +12,28 @@
 void print_array(int *a, int n)
 {
 	int count;
-	int len;
 
 	count = 0;
-	len = _strlen(a);
 	while (count < n)
 	{
-		if (count < len)
+		if (a[count] > 999)
 		{
-
-			_putchar(a[count]);
-			count++;
+			_putchar(a[count] / 1000 + '0');
+			_putchar(a[count] / 100 + '0');
+			_putchar(a[count] / 10 + '0');
+			_putchar(a[count] % 10 + '0');
 		}
+		else if (a[count] > 99)
+		{
+			_putchar(a[count] / 100 + '0');
+			_putchar(a[count] / 10 + '0');
+			_putchar(a[count] % 10 + '0');
+		}
+		else if (a[count] > 9)
+		{
+			_putchar(a[count] / 10 + '0');
+			_putchar(a[count] % 10 + '0');
+		}
+		count++;
 	}
 }
