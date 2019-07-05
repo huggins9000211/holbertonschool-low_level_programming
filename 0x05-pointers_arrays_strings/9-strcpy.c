@@ -37,11 +37,11 @@ char *_strcpy(char *dest, char *src)
 	int len;
 
 	count = 0;
-	len = _strlen(src);
+	len = _strlen(src) + 1;
 	while (count < len)
 	{
 		dest[count] = src[count];
 		count++;
 	}
-	return dest;
+	return (dest);
 }
