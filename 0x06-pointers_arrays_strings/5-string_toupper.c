@@ -21,7 +21,7 @@ char *string_toupper(char *s)
 		else
 		{
 			x[count] = s[count];
-			count++;
+			count ++;
 		}
 	}
 	return (x);
