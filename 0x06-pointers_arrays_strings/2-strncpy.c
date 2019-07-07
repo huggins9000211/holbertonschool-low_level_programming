@@ -28,10 +28,8 @@ int _strlen(char *s)
 char *_strncpy(char *dest, char *src, int n)
 {
 	int count;
-	int len;
 
 	count = 0;
-	len = _strlen(src) + 1;
 	while (count < n)
 	{
 		dest[count] = src[count];
