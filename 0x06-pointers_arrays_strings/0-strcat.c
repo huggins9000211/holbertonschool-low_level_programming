@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <unistd.h>
 /**
  * _strlen - Prints a string
  * @s: char
@@ -19,16 +18,7 @@ int _strlen(char *s)
 	}
 	return (count);
 }
-/**
- * _putchar - Prints a string
- * @c: char
- *
- * Return: int
- */
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
+
 /**
  * _strcat - Prints a string
  * @dest: char
