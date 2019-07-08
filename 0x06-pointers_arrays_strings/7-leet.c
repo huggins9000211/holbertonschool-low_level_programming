@@ -1,5 +1,5 @@
 /**
- * *cap_string - Prints a string
+ * *leet - Prints a string
  * @s: char
  *
  * Return: int
