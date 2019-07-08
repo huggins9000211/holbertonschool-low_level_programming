@@ -1,5 +1,5 @@
 /**
- * *string_toupper - Prints a string
+ * *cap_string - Prints a string
  * @s: char
  *
  * Return: int
@@ -24,16 +24,16 @@ char *cap_string(char *s)
 			{
 				while (d[dc] != '\0')
 				{
-					if (s[count -1] == d[dc])
+					if (s[count - 1] == d[dc])
 					{
 						s[count] = s[count] - ' ';
 					}
-					dc ++;
+					dc++;
 				}
 				dc = 0;
 			}
 		}
-		count ++;
+		count++;
 	}
 	return (s);
 }

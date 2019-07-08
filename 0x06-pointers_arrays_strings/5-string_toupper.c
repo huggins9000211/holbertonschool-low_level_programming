@@ -16,12 +16,12 @@ char *string_toupper(char *s)
 		if ((s[count] >= 97) && (s[count] <= 122))
 		{
 			x[count] = s[count] - ' ';
-			count ++;
+			count++;
 		}
 		else
 		{
 			x[count] = s[count];
-			count ++;
+			count++;
 		}
 	}
 	return (x);
