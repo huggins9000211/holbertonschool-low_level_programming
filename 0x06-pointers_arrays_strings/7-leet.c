@@ -17,25 +17,16 @@ char *leet(char *s)
 	count = 0;
 	while (s[count] != '\0')
 	{
-		if ((s[count] >= 97 && s[count] <= 122) || (s[count] >= 97 && s[count]))
+
+		while (l[c] != '\0')
 		{
-			if (count == 0)
+			if (s[count] == l[c])
 			{
-				s[count] = s[count] - ' ';
+				s[count] = n[c];
 			}
-			else
-			{
-				while (l[c] != '\0')
-				{
-					if (s[count] == l[c])
-					{
-						s[count] = n[c];
-					}
-					c++;
-				}
-				c = 0;
-			}
+			c++;
 		}
+		c = 0;
 		count++;
 	}
 	return (s);
