@@ -1,8 +1,7 @@
 /**
- * _strlen - Prints a string
- * @s: char
- * @i: char
- * @count: int
+ * reverse_array - Prints a string
+ * @a: char
+ * @n: char
  *
  * Return: int
  */
