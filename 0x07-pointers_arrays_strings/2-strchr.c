@@ -37,6 +37,11 @@ char *_strchr(char *s, char c)
 			return r;
 		}
 		i++;
+		if (s[i] == c)
+		{
+			r  = &s[i];
+			return r;
+		}
 	}
 	return ('\0');
 }
