@@ -1,7 +1,8 @@
 #include "holberton.h"
 
 /**
- * main - check the code for Holberton School students.
+ * factorial - check the code for Holberton School students.
+ *@n: int
  *
  * Return: Always 0.
  */
@@ -9,7 +10,7 @@ int factorial(int n)
 {
 	if (n >= 1)
 	{
-		return(n * factorial(n-1));
+		return (n * factorial(n - 1));
 	}
 	else if (n == 0)
 	{
@@ -21,6 +22,6 @@ int factorial(int n)
 	}
 	else
 	{
-		return(n * factorial(n-1));
+		return (n * factorial(n - 1));
 	}
 }
