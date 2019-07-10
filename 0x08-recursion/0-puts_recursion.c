@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * _strlen - Prints a string
+ * _puts_recursion - Prints a string
  * @s: char
  *
  * Return: int
