@@ -21,11 +21,7 @@ int wildcmp(char *s1, char *s2)
 
 	if (*s4 == '*')
 	{
-		if ((s5 == '\0') && ((s6 != '\0') && (s6 != '*')))
-		{
-			return (0);
-		}
-		else if (s5 == '\0')
+		if (s5 == '\0')
 		{
 			return (1);
 		}
