@@ -5,7 +5,13 @@
 #include <ctype.h>
 #include <stdlib.h>
 
-
+/**
+ * main - Prints a string
+ * @argc: char
+ * @argv: char
+ *
+ * Return: int
+ */
 int main(int argc, char *argv[])
 {
 	int count;
