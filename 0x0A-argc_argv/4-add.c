@@ -4,11 +4,6 @@
 #include <errno.h>
 #include <ctype.h>
 #include <stdlib.h>
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
-
 
 int main(int argc, char *argv[])
 {
