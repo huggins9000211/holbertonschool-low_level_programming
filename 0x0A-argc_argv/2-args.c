@@ -9,7 +9,7 @@
  *
  * Return: int
  */
-int main(int argc , char *argv[])
+int main(int argc, char *argv[])
 {
 	int count;
 
@@ -17,7 +17,7 @@ int main(int argc , char *argv[])
 	while (count < argc)
 	{
 		printf("%s\n", argv[count]);
-		count ++;
+		count++;
 	}
 	return (0);
 }
