@@ -26,8 +26,8 @@ int main(int argc, char *argv[])
 	result = 0;
 	if (argc != 3)
 	{
-		printf("0\n");
-		return (0);
+		printf("Error\n");
+		return (1);
 	}
 	while (count < argc)
 	{
