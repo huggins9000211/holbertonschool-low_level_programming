@@ -17,4 +17,5 @@
 	}
 	result = (char*)malloc(size * Sizeof(int));
 	*result = c;
+	return (result);
  }
