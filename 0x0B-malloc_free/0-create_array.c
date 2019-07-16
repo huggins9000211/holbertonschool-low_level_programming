@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - Prints a string
- * @argc: char
- * @argv: char
- *
- * Return: int
- */
- char *create_array(unsigned int size, char c)
- {
+* main - Prints a string
+* @argc: char
+* @argv: char
+*
+* Return: int
+*/
+char *create_array(unsigned int size, char c)
+{
 	char *result;
 	unsigned int i;
 
@@ -22,6 +22,5 @@
 	{
 		result[i] = c;
 	}
-	printf("%c\n", *result);
 	return (result);
- }
+}
