@@ -78,6 +78,10 @@ char *str_concat(char *s1, char *s2)
 		result = _strdup(s1);
 		return (result);
 	}
+	else if(s1 == NULL && s2 == NULL)
+	{
+		return (NULL);
+	}
 
 	for (i = 0; i < len1; i++)
 	{
