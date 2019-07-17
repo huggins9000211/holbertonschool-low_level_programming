@@ -30,13 +30,20 @@ char *_strdup(char *str)
 	int len;
 	char *result;
 	int i;
-
+	if (str == '\0')
+	{
+		return ('\0');
+	}
 	len = _strlen(str);
 	if (len == 0)
 	{
 		return ('\0');
 	}
-	result = (char *)malloc(len * sizeof(char));
+	result = (char *)malloc((len * sizeof(char)) + 1);
+	if (result == '\0')
+	{
+		return ('\0');
+	}
 
 	for (i = 0; i < len; i++)
 	{
