@@ -19,9 +19,8 @@ int _strlen(char *s)
 	return (count);
 }
 /**
-* main - Prints a string
-* @argc: char
-* @argv: char
+* _strdup - Prints a string
+* @str: char
 *
 * Return: int
 */
@@ -46,9 +45,9 @@ char *_strdup(char *str)
 	return (result);
 }
 /**
-* main - Prints a string
-* @argc: char
-* @argv: char
+* str_concat - Prints a string
+* @s1: char
+* @s2: char
 *
 * Return: int
 */
@@ -79,12 +78,12 @@ char *str_concat(char *s1, char *s2)
 	for (i = 0; i < len1; i++)
 	{
 		result[count] = s1[i];
-		count ++;
+		count++;
 	}
 	for (i = 0; i < len2; i++)
 	{
 		result[count] = s2[i];
-		count ++;
+		count++;
 	}
 	result[count] = '\0';
 	return (result);

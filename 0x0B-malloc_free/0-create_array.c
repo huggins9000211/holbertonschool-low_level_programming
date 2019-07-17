@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
-* main - Prints a string
-* @argc: char
-* @argv: char
+* create_array - Prints a string
+* @size: char
+* @c: char
 *
 * Return: int
 */
@@ -16,7 +16,7 @@ char *create_array(unsigned int size, char c)
 	{
 		return ('\0');
 	}
-	result = (char*)malloc(size * sizeof(char));
+	result = (char *)malloc(size * sizeof(char));
 
 	for (i = 0; i < size; i++)
 	{

@@ -20,9 +20,8 @@ int _strlen(char *s)
 }
 
 /**
-* main - Prints a string
-* @argc: char
-* @argv: char
+* _strdup - Prints a string
+* @str: char
 *
 * Return: int
 */
@@ -37,7 +36,7 @@ char *_strdup(char *str)
 	{
 		return ('\0');
 	}
-	result = (char*)malloc(len * sizeof(char));
+	result = (char *)malloc(len * sizeof(char));
 
 	for (i = 0; i < len; i++)
 	{

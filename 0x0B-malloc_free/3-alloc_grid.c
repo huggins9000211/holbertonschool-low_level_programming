@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
-* main - Prints a string
-* @argc: char
-* @argv: char
+* alloc_grid - Prints a string
+* @width: char
+* @height: char
 *
 * Return: int
 */
@@ -23,7 +23,7 @@ int **alloc_grid(int width, int height)
 	{
 		return ('\0');
 	}
-	for(i = 0; i < height; i++)
+	for (i = 0; i < height; i++)
 	{
 		arr[i] = (ptr + width * i);
 	}
