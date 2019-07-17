@@ -68,12 +68,12 @@ char *str_concat(char *s1, char *s2)
 	len2 = _strlen(s2);
 	result = (char *)malloc((len1 + len2) * sizeof(char));
 
-	if (s1 == '\0')
+	if (s1 == '\0' || s1 == NULL)
 	{
 		result = _strdup(s2);
 		return (result);
 	}
-	else if (s2 == '\0')
+	else if (s2 == '\0' || s2 == NULL)
 	{
 		result = _strdup(s1);
 		return (result);
