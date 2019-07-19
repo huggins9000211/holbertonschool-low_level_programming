@@ -1,3 +1,14 @@
+#include "holberton.h"
+#include <stdio.h>
+#include <stdlib.h>
+/**
+* str_nconcat - Prints a string
+* @s1: char
+* @s2: char
+* @n: char
+*
+* Return: int
+*/
 char *str_nconcat(char *s1, char *s2, unsigned int n)
 {
 	int len1;
