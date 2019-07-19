@@ -2,9 +2,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
-* create_array - Prints a string
-* @size: char
-* @c: char
+* malloc_checked - Prints a string
+* @b: char
 *
 * Return: int
 */
