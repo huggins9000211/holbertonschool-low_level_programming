@@ -1,4 +1,4 @@
-char *str_concat(char *s1, char *s2)
+char *str_nconcat(char *s1, char *s2, unsigned int n)
 {
 	int len1;
 	int len2;
