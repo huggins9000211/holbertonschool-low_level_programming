@@ -51,27 +51,18 @@ char *_strcpy(char *dest, char *src)
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	char *n;
-	char *o;
 	dog_t n_dog;
 	dog_t *end_dog;
 
-	n = malloc(sizeof(name));
-	if (n == NULL)
+	end_dog = malloc(sizeof(dog_t));
+	if (end_dog == NULL)
 	{
 		return (NULL);
 	}
-	_strcpy(n, name);
-	o = malloc(sizeof(owner));
-	if (n == NULL)
-	{
-		return (NULL);
-	}
-	_strcpy(o, owner);
 
-	n_dog.name = n;
+	n_dog.name = name;
 	n_dog.age = age;
-	n_dog.owner = o;
+	n_dog.owner = owner;
 
 	end_dog = &n_dog;
 	return (end_dog);
