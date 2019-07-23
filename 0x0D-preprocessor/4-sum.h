@@ -1,4 +1,4 @@
 #ifndef GRANDPARENT_H
 #define GRANDPARENT_H
-#define SIZE 1024
+#define ABS(x, y) ((x) + (y))
 #endif
