@@ -6,7 +6,6 @@
  *
  * @name: The function associated
  * @f: The function associated
- * @cmp: The function associated
  * Return: Nothing.
  */
 void print_name(char *name, void (*f)(char *))
