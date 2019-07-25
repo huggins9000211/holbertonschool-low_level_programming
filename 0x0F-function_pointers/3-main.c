@@ -13,6 +13,8 @@ int main(int argc, char *argv[])
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
 	sign = (argv[2]);
+	/*printf("%d\n", num1);
+	printf("%d\n", argc);*/
 	if (argc != 4)
 	{
 		printf("Error\n");
