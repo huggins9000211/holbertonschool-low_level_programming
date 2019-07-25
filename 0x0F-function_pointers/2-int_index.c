@@ -1,3 +1,12 @@
+#include "function_pointers.h"
+/**
+ * int_index - Struct op
+ *
+ * @array: The function associated
+ * @size: The function associated
+ * @cmp: The function associated
+ * Return: Nothing.
+ */
 int int_index(int *array, int size, int (*cmp)(int))
 {
 	int i;
