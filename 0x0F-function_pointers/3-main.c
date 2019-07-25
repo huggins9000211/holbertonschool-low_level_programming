@@ -24,18 +24,18 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (98);
 	}
-	else if ((*sign == '/' || *sign == '%') && (num2 == 0))
-	{
-		printf("Error\n");
-		return (100);
-	}
 	f = get_op_func(sign);
 	if (f == NULL)
 	{
 		printf("Error\n");
 		return (99);
 	}
+	if ((*sign == '/' || *sign == '%') && (num2 == 0))
+	{
+		printf("Error\n");
+		return (100);
+	}
 	result = (f(num1, num2));
 	printf("%d\n", result);
-	return (1);
+	return (0);
 }
