@@ -16,14 +16,15 @@ int main(int argc, char *argv[])
 	char *sign;
 	int (*f)(int a, int b);
 
-	num1 = atoi(argv[1]);
-	num2 = atoi(argv[3]);
-	sign = (argv[2]);
+
 	if (argc != 4)
 	{
 		printf("Error\n");
 		return (98);
 	}
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[3]);
+	sign = (argv[2]);
 	f = get_op_func(sign);
 	if (f == NULL)
 	{
