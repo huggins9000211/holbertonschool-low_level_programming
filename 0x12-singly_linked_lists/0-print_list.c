@@ -3,9 +3,6 @@
 
 size_t print_list(const list_t *h)
 {
-	char *string;
-	char *len;
-
 	int count;
 
 	if (h != NULL)
