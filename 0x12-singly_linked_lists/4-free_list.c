@@ -1,7 +1,7 @@
 #include "lists.h"
 void free_list(list_t *head);
 {
-	if (h != NULL)
+	if (head != NULL)
 	{
 		free_list(h->next);
 		free(h->next);
