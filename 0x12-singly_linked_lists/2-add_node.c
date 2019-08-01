@@ -43,16 +43,17 @@ list_t *add_node(list_t **head, const char *str)
 
 	size_t count;
 	list_t *node;
+	list_t *headcopy;
 	char *copy;
 
 	node = malloc(sizeof(list_t));
 	if (node == NULL)
 		return NULL;
 
-	node.next = head->next;
+	node->next = head->next;
 	copy = _strdup(str);
 	node->str = copy;
 	node->len = _strlen(copy);
 	head->next = node;
-	return (&node);
+	return (node);
 }
