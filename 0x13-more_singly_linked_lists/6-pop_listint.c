@@ -8,5 +8,5 @@ int pop_listint(listint_t **head)
 		return (0);
 	}
 	*head = (*head)->next;
-	return (1);
+	return ((*head)->n);
 }
