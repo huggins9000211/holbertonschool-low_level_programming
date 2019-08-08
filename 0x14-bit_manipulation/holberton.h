@@ -6,6 +6,8 @@
 int putstring(char *in);
 int _strlen(char *s);
 int _putchar(char c);
+int get_bit(unsigned long int n, unsigned int index);
+unsigned int getlen(unsigned long int n);
 void print_binary(unsigned long int n);
 
 #endif

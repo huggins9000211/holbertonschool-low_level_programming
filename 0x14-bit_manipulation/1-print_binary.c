@@ -10,20 +10,25 @@ void print_binary(unsigned long int n)
 	{
 		_putchar('0');
 	}
-	for (i = 31; i >= 0; i--) {
-		int k = n >> i;
-		if (k & 1)
+	else
+	{
+		for (i = 31; i >= 0; i--)
 		{
-			started = 1;
-			_putchar('1');
-		}
-		else
-		{
-			if (started)
+			int k = n >> i;
+			if (k & 1)
 			{
-				_putchar('0');
+				started = 1;
+				_putchar('1');
 			}
-		}
+			else
+			{
+				if (started)
+				{
+					_putchar('0');
+				}
+			}
 
+		}
 	}
+
 }
