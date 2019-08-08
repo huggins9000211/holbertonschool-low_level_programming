@@ -11,7 +11,7 @@ int _putchar(char c)
 	return (write(1, &c, 1));
 }
 
-unsigned int getlen(unsigned long int n)
+unsigned int getlenth(unsigned long int n)
 {
 
 	int i;
@@ -55,7 +55,7 @@ int get_bit(unsigned long int n, unsigned int index)
 {
 	int i;
 
-	unsigned int x = getlen(n);
+	unsigned int x = getlenth(n);
 	int started = 0;
 	if (n == 0)
 	{
