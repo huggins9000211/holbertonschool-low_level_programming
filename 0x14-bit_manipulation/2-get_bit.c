@@ -72,6 +72,7 @@ int get_bit(unsigned long int n, unsigned int index)
 	unsigned int x = getlenth(n);
 	int started = 0;
 	if (n == 0)
+	
 	{
 		if (index)
 		{
