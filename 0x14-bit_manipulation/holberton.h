@@ -1,8 +1,6 @@
 #ifndef GRANDPARENT_H
 #define GRANDPARENT_H
-#include <stdio.h>
 #include <malloc.h>
-#include <stdarg.h>
 #include <unistd.h>
 
 int putstring(char *in);
