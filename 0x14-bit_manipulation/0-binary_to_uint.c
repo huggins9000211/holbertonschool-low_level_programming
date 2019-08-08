@@ -9,6 +9,7 @@ unsigned int binary_to_uint(const char *b)
 {
 	const char *start = b;
 	unsigned int total = 0;
+
 	if (!b)
 	{
 		return (0);
