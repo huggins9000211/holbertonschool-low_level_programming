@@ -10,15 +10,21 @@ int _putchar(char c)
 {
 	return (write(1, &c, 1));
 }
-
+/**
+ * getlenth - writes the character c to stdout
+ * @n: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
 unsigned int getlenth(unsigned long int n)
 {
 
 	int i;
 
 	unsigned int x = 0;
-
 	int started = 0;
+
 	if (n == 0)
 	{
 		return (0);
@@ -28,6 +34,7 @@ unsigned int getlenth(unsigned long int n)
 		for (i = 31; i >= 0; i--)
 		{
 			int k = n >> i;
+
 			if (k & 1)
 			{
 				if (started)
@@ -50,7 +57,14 @@ unsigned int getlenth(unsigned long int n)
 	}
 
 }
-
+/**
+ * get_bit - writes the character c to stdout
+ * @index: The character to print
+ * @n: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
 int get_bit(unsigned long int n, unsigned int index)
 {
 	int i;
@@ -61,7 +75,7 @@ int get_bit(unsigned long int n, unsigned int index)
 	{
 		if (index)
 		{
-			return(-1);
+			return (-1);
 		}
 		return (0);
 
@@ -71,6 +85,7 @@ int get_bit(unsigned long int n, unsigned int index)
 		for (i = 31; i >= 0; i--)
 		{
 			int k = n >> i;
+
 			if (k & 1)
 			{
 				started = 1;
