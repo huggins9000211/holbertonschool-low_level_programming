@@ -10,6 +10,7 @@ int _putchar(char c)
 {
 	return (write(1, &c, 1));
 }
+
 unsigned int getlen(unsigned long int n)
 {
 
@@ -49,6 +50,7 @@ unsigned int getlen(unsigned long int n)
 	}
 
 }
+
 int get_bit(unsigned long int n, unsigned int index)
 {
 	int i;
@@ -88,9 +90,7 @@ int get_bit(unsigned long int n, unsigned int index)
 					}
 					x--;
 				}
-
 			}
-
 		}
 		return (-1);
 	}
