@@ -13,6 +13,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	int fd;
 	size_t reed;
 	char *string;
+	int writeint;
 
 	string = malloc(letters + 1);
 
@@ -30,7 +31,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	reed = read(fd, string, letters);
 	close(fd);
 	string[letters + 1] = '\0';
-	write(1, filename, reed);
+	writeint = write(1, filename, reed);
+	if (writeint == -1)
+		return (0);
 	return (reed);
 
 }
