@@ -18,7 +18,7 @@ int main(int ac, char **av)
 {
 	int fd1, readint;
 
-	char *string = [1024];
+	char string[1024];
 	char *from = av[1];
 
 	if (ac != 3)
