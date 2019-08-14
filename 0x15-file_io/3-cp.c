@@ -16,23 +16,20 @@
  */
 int main(int ac, char **av)
 {
+	int fd1;
+
 	char *from = av[1];
-	char *to = av[2];
 
 	if (ac != 3)
 	{
-		write(2, "Usage: cp file_from file_to\n", 28)
+		write(2, "Usage: cp file_from file_to\n", 28);
 		exit(97);
 	}
-
-	int fd1, fd2;
-	int writeint;
-
 
 	fd1 = open(from, O_RDONLY);
 	if (fd1 == -1)
 	{
-		write(2, "Error: Can't read from file NAME_OF_THE_FILE\n", 45)
+		write(2, "Error: Can't read from file NAME_OF_THE_FILE\n", 45);
 		exit(98);
 	}
 
