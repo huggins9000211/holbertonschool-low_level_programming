@@ -7,7 +7,14 @@
 #include <fcntl.h>
 
 #include <unistd.h>
-
+/**
+ * read_textfile - writes the character c to stdout
+ * @filename: The character to print
+ * @letters: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;

@@ -6,7 +6,13 @@
 #include <fcntl.h>
 
 #include <unistd.h>
-
+/**
+ * _strlen - writes the character c to stdout
+ * @s: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
 int _strlen(char *s)
 {
 	int length = 0;
@@ -20,7 +26,14 @@ int _strlen(char *s)
 	return (length);
 }
 
-
+/**
+ * append_text_to_file - writes the character c to stdout
+ * @filename: The character to print
+ * @text_content: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
 int append_text_to_file(const char *filename, char *text_content)
 {
 	int fd;
