@@ -16,8 +16,9 @@
  */
 int main(int ac, char **av)
 {
-	int fd1;
+	int fd1, readint;
 
+	char *string = [1024];
 	char *from = av[1];
 
 	if (ac != 3)
@@ -31,6 +32,19 @@ int main(int ac, char **av)
 	{
 		write(2, "Error: Can't read from file NAME_OF_THE_FILE\n", 45);
 		exit(98);
+	}
+	else
+	{
+		readint = read(fd1, string, 1024);
+		if (readint)
+		{
+			return (1);
+		}
+		else
+		{
+			write(2, "Error: Can't read from file NAME_OF_THE_FILE\n", 45);
+			exit(98);
+		}
 	}
 
 	close(fd1);
