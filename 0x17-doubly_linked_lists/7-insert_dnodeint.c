@@ -1,28 +1,33 @@
 #include "lists.h"
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
-    dlistint_t *new = malloc(sizeof(dlistint_t));
     unsigned int i = 0;
-    while ((*h)->prev != NULL)
+    dlistint_t *copy = *h;
+    dlistint_t *new = malloc(sizeof(dlistint_t));
+    if (new == NULL)
     {
-        (*h) = (*h)->prev;
+        return (NULL);
     }
-    while (i < idx)
+
+    
+    if (h == NULL)
     {
-        if ((*h) == NULL)
+        return(NULL);
+    }
+    
+    while (i < (idx - 1))
+    {
+        if (copy->next == NULL)
         {
             return (NULL);
         }
-
-        if (i == idx - 1)
-        {
-            new->prev = (*h);
-        }
-        (*h) = (*h)->next;
+        copy = copy->next;
         i++;
     }
+    new->prev = copy->next->prev;
     new->n = n;
-    new->next = (*h);
-    (*h) = new;
+    new->next = copy->next;
+    copy->next->prev = new;
+    copy->next = new;
     return (new);
 }
