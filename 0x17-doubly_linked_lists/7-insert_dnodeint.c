@@ -35,8 +35,16 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
     }
     new->prev = copy;
     new->n = n;
-    new->next = copy->next;
-    copy->next->prev = new;
+    printf("<<<<<<<<<<\n");
+    if (copy->next)
+    {
+        new->next = copy->next;
+        copy->next->prev = new;
+    }
+    else
+    {
+        new->next = NULL;
+    }
     copy->next = new;
     return (new);
 }
