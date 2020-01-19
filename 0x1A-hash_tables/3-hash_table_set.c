@@ -33,8 +33,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 	}
 	strcpy(valueCopy, value);
-	index = key_index(key, ht->size);
-	new->key = key;
+	index = key_index((const unsigned char *)key, ht->size);
+	new->key = (char *)key;
 	new->value = valueCopy;
 	new->next = ht->array[index];
 	ht->array[index] = new;
