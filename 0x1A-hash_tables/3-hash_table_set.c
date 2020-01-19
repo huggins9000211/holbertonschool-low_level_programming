@@ -1,6 +1,6 @@
 #include "hash_tables.h"
 /**
- * key_index - Hash table data structure
+ * hash_table_set - Hash table data structure
  *
  * @key: The size of the array
  * Each cell of this array is a pointer to the first node of a linked list,
