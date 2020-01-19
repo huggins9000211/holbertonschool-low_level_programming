@@ -6,7 +6,8 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
     
     if (new == NULL)
     {
-        return (NULL);
+        fprintf(stderr, "Error: malloc failed\n");
+		exit(EXIT_FAILURE);
     }
     
     new->n = n;

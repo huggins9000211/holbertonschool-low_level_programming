@@ -7,6 +7,5 @@ void free_dlistint(dlistint_t *head)
         last = head;
         head = last->next;
         free(last);
-    }
-    
+    } 
 }
