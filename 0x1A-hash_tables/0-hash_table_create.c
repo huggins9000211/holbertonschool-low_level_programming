@@ -1,5 +1,4 @@
 #include "hash_tables.h"
-
 /**
  * hash_table_create - Hash table data structure
  *
@@ -14,17 +13,20 @@ hash_table_t *hash_table_create(unsigned long int size)
 	hash_node_t **array;
 	unsigned long int i;
 
-	array = malloc(sizeof(hash_node_t) * size);
-	if (array == NULL)
-	{
-		return (NULL);
-	}
-
 	new = malloc(sizeof(hash_table_t));
 	if (new == NULL)
 	{
 		return (NULL);
 	}
+
+	array = malloc(sizeof(hash_node_t) * size);
+	if (array == NULL)
+	{
+		free(new);
+		return (NULL);
+	}
+
+	
 
 	new->size = size;
 	new->array = array;
