@@ -4,26 +4,20 @@
 
 def island_perimeter(grid):
     """ Island """
-    usedCords = []
+    m, n = len(grid[0]), len(grid)
     count = 0
-    for y in range(0, len(grid)):
-        for x in range(0, len(grid[y])):
-
-            if grid[y][x] == 1:
-                print(grid[y][x])
-                if y > 0 and y < len(grid) - 1:
-                    if grid[y-1][x] == 0:
-                        if (y-1, x) not in usedCords:
-                            count += 1
-                    if grid[y+1][x] == 0:
-                        if (y+1, x) not in usedCords:
-                            count += 1
-                if x > 0 and y < len(grid[y]) - 1:
-                    if grid[y][x-1] == 0:
-                        if (y, x-1) not in usedCords:
-                            count += 1
-                    if grid[y][x+1] == 0:
-                        if (y, x+1) not in usedCords:
-                            count += 1
-                print(count)
+    for i in range(0, len(grid)):
+        for j in range(0, len(grid[i])):
+            if grid[i][j] == 1:
+                if i == n-1 or grid[i+1][j] == 0:
+                    count += 1
+                # up
+                if i == 0 or grid[i-1][j] == 0:
+                    count += 1
+                # left
+                if j == m-1 or grid[i][j+1] == 0:
+                    count += 1
+                # right
+                if j == 0 or grid[i][j-1] == 0:
+                    count += 1
     return count
