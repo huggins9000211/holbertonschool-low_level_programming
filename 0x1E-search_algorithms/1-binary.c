@@ -12,6 +12,7 @@
 void printArr(int *array, int i1, int i2)
 {
 	int use = 0;
+
 	if (i1 <= i2)
 	{
 		printf("Searching in array: ");
