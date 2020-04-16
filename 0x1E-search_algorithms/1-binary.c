@@ -11,8 +11,12 @@
  */
 void printArr(int *array, int i1, int i2)
 {
+	int use = 0;
 	if (i1 <= i2)
+	{
 		printf("Searching in array: ");
+		use = 1;
+	}
 	while (i1 <= i2)
 	{
 		printf("%d", array[i1]);
@@ -20,7 +24,8 @@ void printArr(int *array, int i1, int i2)
 			printf(", ");
 		i1++;
 	}
-	printf("\n");
+	if (use)
+		printf("\n");
 }
 /**
  * binarySearchH - check the code for Holberton School students.
